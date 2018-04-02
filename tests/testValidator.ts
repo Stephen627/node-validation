@@ -5,7 +5,7 @@ import Validator from '../validator'
 
 describe('Validator', () => {
   it('should pass validation', () => {
-    let validator = new Validator()
+    let validator: Validator = new Validator()
 
     validator.setRules({
       'test': 'required|regex:[0-9]+'
@@ -17,7 +17,7 @@ describe('Validator', () => {
   })
 
   it('should fail validation', () => {
-    let validator = new Validator()
+    let validator: Validator = new Validator()
 
     validator.setRules({
       'test': 'required|regex:[0-9]+'

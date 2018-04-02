@@ -4,7 +4,7 @@ import Validator from '../validator'
 
 describe('Required Rule',  () => {
   it('should fail when the required field is not included',  () => {
-    let validator = new Validator()
+    let validator: Validator = new Validator()
     
     validator.setRules({
       'test': 'required'

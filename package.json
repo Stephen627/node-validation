@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "postinstall": "npm run-script build",
     "test": "mocha -r ts-node/register tests/**/*.ts",
     "lint": "tslint *.ts **/*.ts"
   },

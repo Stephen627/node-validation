@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A simple validation library",
   "main": "dist/index.js",
-  "typings": "index.d.ts",
   "scripts": {
     "build": "tsc",
     "postinstall": "npm run-script build",

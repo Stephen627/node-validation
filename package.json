@@ -7,7 +7,7 @@
     "build": "tsc",
     "postinstall": "npm run-script build",
     "test": "mocha -r ts-node/register tests/**/*.ts",
-    "lint": "tslint src/**/*.ts"
+    "lint": "tslint *.ts **/*.ts"
   },
   "keywords": [
     "validation"

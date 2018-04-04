@@ -1,33 +1,30 @@
-import mocha from 'mocha'
-import { expect } from 'chai'
-import Validator from '../validator'
+import mocha from 'mocha';
+import { expect } from 'chai';
+import Validator from '../validator';
 
 describe('Required Rule',  () => {
   it('should fail when the required field is not included',  () => {
-    let validator: Validator = new Validator()
-    
+    const validator: Validator = new Validator();
+
     validator.setRules({
-      'test': 'required'
+      test: 'required',
     }).setData({
-      
-    })
+    });
 
-    validator.passes()
-
-    expect(validator.getErrors()).to.be.length(1)
-  })
+    validator.passes();
+    expect(validator.getErrors()).to.be.length(1);
+  });
 
   it('should pass if the required field is present', () => {
-    let validator = new Validator()
+    const validator: Validator = new Validator();
 
     validator.setRules({
-      'test': 'required'
+      test: 'required',
     }).setData({
-      'test': 'testing'
-    })
-  
-    validator.passes()
+      test: 'testing',
+    });
 
-    expect(validator.getErrors()).to.be.length(0)
-  })
-})
+    validator.passes();
+    expect(validator.getErrors()).to.be.length(0);
+  });
+});

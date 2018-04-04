@@ -1,4 +1,4 @@
-import Rule from '../rule'
+import Rule from '../rule';
 
 class Required implements Rule {
 
@@ -6,16 +6,16 @@ class Required implements Rule {
    * @inheritDoc
    */
   public validate (data: string): boolean {
-    return !!data
+    return !!data;
   }
 
   /**
    * @inheritDoc
    */
   public getErrorString (key: string): string {
-    return `${key} is required`
+    return `${key} is required`;
   }
 
 }
 
-export default Required
+export default Required;

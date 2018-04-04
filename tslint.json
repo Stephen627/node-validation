@@ -1,8 +1,13 @@
 {
   "extends": [
-    "tslint:recommended"   
+    "tslint:recommended"
   ],
   "jsRules": {},
-  "rules": {},
+  "rules": {
+    "quotemark": [true, "single"],
+    "ordered-imports": false,
+    "space-before-function-paren": false,
+    "interface-name": [true, "never-prefix"]
+  },
   "rulesDirectory": []
 }

@@ -1,30 +1,30 @@
-import 'mocha'
+import 'mocha';
 
-import { expect } from 'chai'
-import Validator from '../validator'
+import { expect } from 'chai';
+import Validator from '../validator';
 
 describe('Validator', () => {
   it('should pass validation', () => {
-    let validator: Validator = new Validator()
+    const validator: Validator = new Validator();
 
     validator.setRules({
-      'test': 'required|regex:[0-9]+'
+      test: 'required|regex:[0-9]+',
     }).setData({
-      'test': 123456789
-    })
+      test: 123456789,
+    });
 
-    expect(validator.passes()).to.equal(true)
-  })
+    expect(validator.passes()).to.equal(true);
+  });
 
   it('should fail validation', () => {
-    let validator: Validator = new Validator()
+    const validator: Validator = new Validator();
 
     validator.setRules({
-      'test': 'required|regex:[0-9]+'
+      test: 'required|regex:[0-9]+',
     }).setData({
-      'test': 'testing'
-    })
+      test: 'testing',
+    });
 
-    expect(validator.fails()).to.equal(true)
-  })
-})
+    expect(validator.fails()).to.equal(true);
+  });
+});

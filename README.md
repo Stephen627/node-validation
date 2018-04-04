@@ -3,7 +3,7 @@ A small simple library to validate JavaScript objects
 
 ## Install
 ```
-$ npm i stephen627-node-validation`
+$ npm i stephen627-node-validation
 ```
 
 ## Example

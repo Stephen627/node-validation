@@ -4,10 +4,11 @@
         "noImplicitAny": true,
         "sourceMap": true,
         "module": "commonjs",
+        "rootDir": "./src",
         "outDir": "./dist"
     },
     "exclude": [
         "node_modules",
-        "tests"
+        "src/tests"
     ]
 }

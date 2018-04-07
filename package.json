@@ -4,9 +4,10 @@
   "description": "A simple validation library for any node application",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "mocha -r ts-node/register tests/**/*.ts",
-    "lint": "tslint *.ts **/*.ts"
+    "clean": "rm -r dist",
+    "build": "npm run clean && tsc",
+    "test": "mocha -r ts-node/register src/tests/**/*.ts",
+    "lint": "tslint src/**/*.ts"
   },
   "keywords": [
     "validation"

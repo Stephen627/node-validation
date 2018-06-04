@@ -2,6 +2,7 @@ image: node:8.11.0
 
 before_script:
   - npm i -g yarn
+  - chmod 775 /usr/local/bin/yarn
 
 stages:
   - build

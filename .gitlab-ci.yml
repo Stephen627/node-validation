@@ -1,6 +1,7 @@
+image: node:8.11.0
+
 before_script:
-  - apt update -qq && apt install -y -qq nodejs
-  - /usr/bin/npm i -g yarn
+  - npm i -g yarn
 
 stages:
   - build

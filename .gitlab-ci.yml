@@ -1,5 +1,5 @@
 before_script:
-  - apt update -qq && apt install -y -qq nodejs
+  - apt update -qq && apt install -y -qq nodejs && apt install -y -qq npm
   - npm i -g yarn
 
 stages:

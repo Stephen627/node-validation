@@ -1,15 +1,18 @@
+before_script:
+  - apt update -qq && apt install -y -qq nodejs && npm i -g yarn
+
 stages:
   - build
   - test
 
-job 1:
+build:
   stage: build
   script: yarn install
 
-job 2:
+run test:
   stage: test
   script: yarn run test
 
-job 3:
+run lint:
   stage: test
   script: yarn run lint

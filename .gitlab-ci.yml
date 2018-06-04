@@ -14,8 +14,4 @@ build:
 
 run test:
   stage: test
-  script: yarn run test
-
-run lint:
-  stage: test
-  script: yarn run lint
+  script: yarn install && yarn run test && yarn run lint

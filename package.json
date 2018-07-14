@@ -1,6 +1,6 @@
 {
   "name": "@stephen627/node-validation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple validation library for any node application",
   "main": "dist/index.js",
   "scripts": {

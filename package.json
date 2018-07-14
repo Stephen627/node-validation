@@ -1,5 +1,5 @@
 {
-  "name": "@stephen627/node-validation",
+  "name": "stephen627-node-validation",
   "version": "1.0.4",
   "description": "A simple validation library for any node application",
   "main": "dist/index.js",
@@ -8,7 +8,8 @@
     "build": "npm run clean && tsc",
     "watch": "npm run clean && tsc -w",
     "test": "mocha -r ts-node/register src/tests/**/*.ts",
-    "lint": "tslint src/**/*.ts"
+    "lint": "tslint src/**/*.ts",
+    "production": "npm run clean && tsc --sourcemap false"
   },
   "keywords": [
     "validation"
